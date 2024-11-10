@@ -1,0 +1,160 @@
+/* Main Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import "reset.css";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f4f4f9;
+}
+
+header {
+  background-color: #6200ea;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #ffeb3b;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #ffeb3b;
+  color: #6200ea;
+}
+
+/* Button Styles */
+.btn {
+  background-color: #6200ea;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #5b00d1;
+}
+
+/* Form and Container Styling */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 25px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+}
+
+.form-container:hover {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+form input, form button, form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #6200ea;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #5b00d1;
+}
+
+/* Book Card Styling */
+.book-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+}
+
+.book-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background-color: #6200ea;
+  color: #fff;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+  width: 200px;
+  top: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.sidebar:hover {
+  width: 220px;
+}
+
+.sidebar a {
+  color: #ffeb3b;
+  text-decoration: none;
+  display: block;
+  padding: 15px 0;
+  transition: color 0.3s;
+}
+
+.sidebar a:hover {
+  color: #fff;
+}
+
+/* Card List Styling */
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
